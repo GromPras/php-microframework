@@ -58,3 +58,19 @@ function appSettings($key, $default = null)
 {
     return ApplicationSettings::getInstance()->get($key, $default);
 }
+
+/**
+ * Return absolute url for a given route
+ *
+ * @param  string  $name
+ * @return string
+ */
+function url_for($name)
+{
+    $protocol = 'http';
+    if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
+        $protocol = 'https';
+    }
+
+    return $protocol.'://'.$_SERVER['HTTP_HOST'].'/'.ltrim($name, '/');
+}
