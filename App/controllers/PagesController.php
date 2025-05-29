@@ -8,6 +8,6 @@ class PagesController
 
     public function home()
     {
-        echo 'Hello World';
+        loadView('pages/home');
     }
 }
