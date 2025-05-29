@@ -1,6 +1,7 @@
 /vendor
 /node_modules
-/config
+/config/db.php
+/config/mailer.php
 .env
 .vscode
 .DS_Store
