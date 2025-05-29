@@ -3,6 +3,6 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title><?= appSettings('title') ?><?= isset($title) ? '| '.$title : '' ?></title>
+		<title><?= appSettings('name') ?><?= isset($title) ? '| '.$title : '' ?></title>
 	</head>
 	<body>
