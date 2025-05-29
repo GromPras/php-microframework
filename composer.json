@@ -1,0 +1,16 @@
+{
+    "name": "grompras/php-microframework",
+    "description": "A PHP Micro Framework, based on bradtraversy/workopia-php",
+    "authors": [
+	{"name": "Jérôme Peyras", "email": "contact@ergodev.fr"}
+    ],
+    "autoload": {
+	"psr-4": {
+	    "Framework\\": "Framework/",
+	    "App\\": "App/"
+	}
+    },
+    "require-dev": {
+        "laravel/pint": "^1.22"
+    }
+}
