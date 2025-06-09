@@ -10,7 +10,7 @@ use Framework\ApplicationSettings;
  */
 function basePath($path = '')
 {
-    return __DIR__.'/'.$path;
+    return __DIR__ . '/' . $path;
 }
 
 /**
@@ -65,12 +65,12 @@ function appSettings($key, $default = null)
  * @param  string  $name
  * @return string
  */
-function url_for($name)
+function urlFor($name)
 {
     $protocol = 'http';
     if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
         $protocol = 'https';
     }
 
-    return $protocol.'://'.$_SERVER['HTTP_HOST'].'/'.ltrim($name, '/');
+    return $protocol . '://' . $_SERVER['HTTP_HOST'] . '/' . ltrim($name, '/');
 }
